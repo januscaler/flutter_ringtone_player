@@ -1,8 +1,8 @@
-# flutter_ringtone_player
+# januscaler_flutter_ringtone_player
 
-A simple ringtone, alarm & notification player plugin.
+this is a forked version with latest updates and fixes A simple ringtone, alarm & notification player plugin.
 
-[![pub package](https://img.shields.io/pub/v/flutter_ringtone_player.svg)](https://pub.dartlang.org/packages/flutter_ringtone_player)
+[![pub package](https://img.shields.io/pub/v/januscaler_flutter_ringtone_player.svg)](https://pub.dartlang.org/packages/januscaler_flutter_ringtone_player)
 [![flutter](https://github.com/inway/flutter_ringtone_player/actions/workflows/flutter.yml/badge.svg)](https://github.com/inway/flutter_ringtone_player/actions/workflows/flutter.yml)
 
 ## Usage
@@ -10,7 +10,7 @@ A simple ringtone, alarm & notification player plugin.
 Add following import to your code:
 
 ```dart
-import 'package:flutter_ringtone_player/flutter_ringtone_player.dart';
+import 'package:januscaler_flutter_ringtone_player/januscaler_flutter_ringtone_player.dart';
 ```
 
 Then simply call this to play system default notification sound:
