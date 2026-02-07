@@ -23,7 +23,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: io.inway.ringtone.player
+        package: com.januscaler.ringtone.player
         pluginClass: FlutterRingtonePlayerPlugin
       ios:
         pluginClass: FlutterRingtonePlayerPlugin

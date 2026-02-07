@@ -1,4 +1,4 @@
-package io.inway.ringtone.player_example;
+package com.januscaler.ringtone.player_example;
 
 import io.flutter.embedding.android.FlutterActivity;
 

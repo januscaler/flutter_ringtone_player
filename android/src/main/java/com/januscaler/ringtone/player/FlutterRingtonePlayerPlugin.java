@@ -1,4 +1,4 @@
-package io.inway.ringtone.player;
+package com.januscaler.ringtone.player;
 
 import android.content.Context;
 import android.media.AudioAttributes;
@@ -68,13 +68,16 @@ public class FlutterRingtonePlayerPlugin implements MethodCallHandler, FlutterPl
                     int pref = call.argument("android");
                     switch (pref) {
                         case 1:
-                            ringtoneUri = ringtoneManager.getActualDefaultRingtoneUri(context, RingtoneManager.TYPE_ALARM);
+                            ringtoneUri = ringtoneManager.getActualDefaultRingtoneUri(context,
+                                    RingtoneManager.TYPE_ALARM);
                             break;
                         case 2:
-                            ringtoneUri = ringtoneManager.getActualDefaultRingtoneUri(context, RingtoneManager.TYPE_NOTIFICATION);
+                            ringtoneUri = ringtoneManager.getActualDefaultRingtoneUri(context,
+                                    RingtoneManager.TYPE_NOTIFICATION);
                             break;
                         case 3:
-                            ringtoneUri = ringtoneManager.getActualDefaultRingtoneUri(context, RingtoneManager.TYPE_RINGTONE);
+                            ringtoneUri = ringtoneManager.getActualDefaultRingtoneUri(context,
+                                    RingtoneManager.TYPE_RINGTONE);
                             break;
                         default:
                             result.notImplemented();
@@ -102,8 +105,7 @@ public class FlutterRingtonePlayerPlugin implements MethodCallHandler, FlutterPl
                                     new AudioAttributes.Builder()
                                             .setUsage(AudioAttributes.USAGE_ALARM)
                                             .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
-                                            .build()
-                            );
+                                            .build());
                         }
 
                         if (call.hasArgument("looping")) {
@@ -141,7 +143,8 @@ public class FlutterRingtonePlayerPlugin implements MethodCallHandler, FlutterPl
 
                         ringtone = RingtoneManager.getRingtone(context, ringtoneUri);
                         if (ringtone == null) {
-                            result.error("RingtoneError", "Failed to retrieve ringtone for URI: " + ringtoneUri.toString(), null);
+                            result.error("RingtoneError",
+                                    "Failed to retrieve ringtone for URI: " + ringtoneUri.toString(), null);
                             return;
                         }
 
@@ -162,7 +165,8 @@ public class FlutterRingtonePlayerPlugin implements MethodCallHandler, FlutterPl
                         if (call.hasArgument("asAlarm")) {
                             final boolean asAlarm = call.argument("asAlarm");
                             if (asAlarm) {
-                                ringtone.setAudioAttributes( new AudioAttributes.Builder().setUsage(AudioAttributes.USAGE_ALARM).build() );
+                                ringtone.setAudioAttributes(
+                                        new AudioAttributes.Builder().setUsage(AudioAttributes.USAGE_ALARM).build());
                             }
                         }
 
@@ -170,23 +174,24 @@ public class FlutterRingtonePlayerPlugin implements MethodCallHandler, FlutterPl
                         result.success(null);
                     } catch (Exception e) {
                         e.printStackTrace();
-                        result.error("RingtonePlaybackError", "Error during ringtone playback: " + e.getMessage(), null);
+                        result.error("RingtonePlaybackError", "Error during ringtone playback: " + e.getMessage(),
+                                null);
                     }
                 } else {
                     result.error("InvalidArguments", "No valid uri or android tone specified", null);
                 }
 
             } else if (call.method.equals("stop")) {
-                    if (ringtone != null) {
-                        ringtone.stop();
-                        ringtone = null;
-                    }
+                if (ringtone != null) {
+                    ringtone.stop();
+                    ringtone = null;
+                }
 
-                    if (mediaPlayer != null) {
-                        mediaPlayer.stop();
-                        mediaPlayer.release();
-                        mediaPlayer = null;
-                    }
+                if (mediaPlayer != null) {
+                    mediaPlayer.stop();
+                    mediaPlayer.release();
+                    mediaPlayer = null;
+                }
 
                 result.success(null);
             } else {

@@ -1,4 +1,4 @@
-group 'io.inway.ringtone.player'
+group 'com.januscaler.ringtone.player'
 version '1.0-SNAPSHOT'
 
 buildscript {
@@ -25,7 +25,7 @@ android {
     compileSdkVersion 33
 
     if (project.android.hasProperty("namespace")) {
-        namespace "io.inway.ringtone.player"
+        namespace "com.januscaler.ringtone.player"
     }
 
     compileOptions {
