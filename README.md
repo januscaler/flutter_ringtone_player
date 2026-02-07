@@ -1,9 +1,9 @@
 # januscaler_flutter_ringtone_player
 
-this is a forked version with latest updates and fixes A simple ringtone, alarm & notification player plugin.
+this is a forked version of flutter_ringtone_player with latest updates and fixes A simple ringtone, alarm & notification player plugin.
 
 [![pub package](https://img.shields.io/pub/v/januscaler_flutter_ringtone_player.svg)](https://pub.dartlang.org/packages/januscaler_flutter_ringtone_player)
-[![flutter](https://github.com/inway/flutter_ringtone_player/actions/workflows/flutter.yml/badge.svg)](https://github.com/inway/flutter_ringtone_player/actions/workflows/flutter.yml)
+[![flutter](https://github.com/januscaler/flutter_ringtone_player/actions/workflows/flutter.yml/badge.svg)](https://github.com/januscaler/flutter_ringtone_player/actions/workflows/flutter.yml)
 
 ## Usage
 
