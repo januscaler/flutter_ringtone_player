@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ringtone_player/flutter_ringtone_player.dart';
+import 'package:januscaler_flutter_ringtone_player/flutter_ringtone_player.dart';
 
 void main() => runApp(const MyApp());
 

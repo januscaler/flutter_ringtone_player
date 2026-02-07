@@ -1,5 +1,5 @@
-name: flutter_ringtone_player_example
-description: Demonstrates how to use the flutter_ringtone_player plugin.
+name: januscaler_flutter_ringtone_player_example
+description: Demonstrates how to use the januscaler_flutter_ringtone_player plugin.
 publish_to: 'none'
 
 environment:
@@ -9,7 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_ringtone_player:
+  januscaler_flutter_ringtone_player:
     path: ../
 
   flutter_lints: ^3.0.1
