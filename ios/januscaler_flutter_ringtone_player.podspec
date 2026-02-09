@@ -2,7 +2,7 @@
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
 #
 Pod::Spec.new do |s|
-  s.name             = 'flutter_ringtone_player'
+  s.name             = 'januscaler_flutter_ringtone_player'
   s.version          = '0.0.1'
   s.summary          = 'Simple ringtone player plugin.'
   s.description      = <<-DESC

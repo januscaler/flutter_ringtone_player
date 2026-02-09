@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - januscaler_flutter_ringtone_player (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - januscaler_flutter_ringtone_player (from `.symlinks/plugins/januscaler_flutter_ringtone_player/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  januscaler_flutter_ringtone_player:
+    :path: ".symlinks/plugins/januscaler_flutter_ringtone_player/ios"
+
+SPEC CHECKSUMS:
+  Flutter: cabc95a1d2626b1b06e7179b784ebcf0c0cde467
+  januscaler_flutter_ringtone_player: b96ba69b2ec49242e9d13f8cbb3629474fc33acd
+
+PODFILE CHECKSUM: 657272904ca374f1ff92bc0af1c112827c45b980
+
+COCOAPODS: 1.16.2
